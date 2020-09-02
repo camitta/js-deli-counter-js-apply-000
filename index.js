@@ -8,12 +8,7 @@ function takeANumber(currentLine, newName) {
 
 //return first person in line as currently serving
 function nowServing(currentLine) {
-  if (currentLine.length !== 0) {
-    return `Currently serving ${currentLine.shift()}.`;
-  }
-  else {
-    return 'There is nobody waiting to be served!';
-  }
+  (currentLine.length !== 0) ? `Currently serving ${currentLine.shift()}.` : 'There is nobody waiting to be served!';
 }
 
 //convert current line to string
